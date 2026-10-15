@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary brand colors - sky blue gradient theme -->
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorPrimaryDark">#0D47A1</color>
+    <color name="colorPrimaryLight">#42A5F5</color>
+    <color name="colorAccent">#FF6F00</color>
+
+    <!-- Background gradients -->
+    <color name="gradientStart">#1565C0</color>
+    <color name="gradientEnd">#42A5F5</color>
+    <color name="gradientMid">#1976D2</color>
+
+    <!-- Surface / card -->
+    <color name="cardBackground">#FFFFFFFF</color>
+    <color name="cardBackgroundAlpha">#33FFFFFF</color>
+
+    <!-- Text -->
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+    <color name="textOnPrimary">#FFFFFF</color>
+    <color name="textHint">#BDBDBD</color>
+
+    <!-- Status -->
+    <color name="colorError">#D32F2F</color>
+    <color name="colorSuccess">#388E3C</color>
+    <color name="colorWarning">#F57C00</color>
+
+    <!-- Weather condition colors -->
+    <color name="colorClear">#FDD835</color>
+    <color name="colorCloudy">#90A4AE</color>
+    <color name="colorRainy">#1E88E5</color>
+    <color name="colorStormy">#5E35B1</color>
+    <color name="colorSnowy">#E0F7FA</color>
+
+    <!-- Night mode -->
+    <color name="nightBackground">#0D1B2A</color>
+    <color name="nightCard">#1A2A3A</color>
+
+    <!-- Divider -->
+    <color name="divider">#E0E0E0</color>
+
+    <!-- Shimmer -->
+    <color name="shimmerBase">#E0E0E0</color>
+    <color name="shimmerHighlight">#F5F5F5</color>
+</resources>

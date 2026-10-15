@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WeatherVN</string>
+
+    <!-- Auth -->
+    <string name="login">Đăng nhập</string>
+    <string name="register">Đăng ký</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="display_name">Họ và tên</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="no_account">Chưa có tài khoản? Đăng ký</string>
+    <string name="have_account">Đã có tài khoản? Đăng nhập</string>
+    <string name="reset_password">Đặt lại mật khẩu</string>
+    <string name="reset_email_sent">Email đặt lại mật khẩu đã được gửi!</string>
+
+    <!-- Weather -->
+    <string name="weather">Thời tiết</string>
+    <string name="search_city">Tìm kiếm thành phố…</string>
+    <string name="humidity">Độ ẩm</string>
+    <string name="wind_speed">Tốc độ gió</string>
+    <string name="pressure">Áp suất</string>
+    <string name="feels_like">Cảm giác như</string>
+    <string name="visibility">Tầm nhìn</string>
+    <string name="sunrise">Bình minh</string>
+    <string name="sunset">Hoàng hôn</string>
+    <string name="forecast_5day">Dự báo 5 ngày</string>
+    <string name="loading">Đang tải…</string>
+    <string name="error_loading">Không thể tải dữ liệu. Kiểm tra kết nối mạng.</string>
+    <string name="city_not_found">Không tìm thấy thành phố.</string>
+    <string name="refresh">Làm mới</string>
+    <string name="cloudiness">Mây che phủ</string>
+
+    <!-- Menu -->
+    <string name="menu_weather">Thời tiết</string>
+    <string name="menu_news">Tin tức</string>
+    <string name="menu_profile">Hồ sơ</string>
+    <string name="menu_settings">Cài đặt</string>
+    <string name="menu_about">Giới thiệu</string>
+    <string name="menu_share">Chia sẻ</string>
+    <string name="nav_home">Trang chủ</string>
+
+    <!-- News -->
+    <string name="news">Tin tức</string>
+    <string name="read_more">Đọc thêm</string>
+    <string name="news_source">Nguồn: %s</string>
+    <string name="no_news">Không có tin tức.</string>
+    <string name="open_browser">Mở trong trình duyệt</string>
+
+    <!-- Profile -->
+    <string name="profile">Hồ sơ người dùng</string>
+    <string name="edit_profile">Chỉnh sửa hồ sơ</string>
+    <string name="save">Lưu</string>
+    <string name="cancel">Hủy</string>
+    <string name="default_city">Thành phố mặc định</string>
+    <string name="member_since">Thành viên từ: %s</string>
+    <string name="update_success">Cập nhật thành công!</string>
+
+    <!-- About -->
+    <string name="about_title">Giới thiệu ứng dụng</string>
+    <string name="about_message">WeatherVN v1.0\nỨng dụng dự báo thời tiết Việt Nam\nDữ liệu từ OpenWeatherMap API\nTin tức từ VnExpress, Tuổi Trẻ, Dân Trí</string>
+
+    <!-- Splash -->
+    <string name="app_tagline">Thời tiết luôn trong tầm tay</string>
+</resources>

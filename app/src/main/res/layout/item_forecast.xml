@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Single row in the 5-day forecast RecyclerView -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg_card_translucent"
+    android:padding="12dp"
+    android:layout_marginBottom="6dp">
+
+    <!-- Day -->
+    <TextView
+        android:id="@+id/tvForecastDay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:text="Thứ 2"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Icon -->
+    <ImageView
+        android:id="@+id/ivForecastIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="Icon" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/tvForecastDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginStart="8dp"
+        android:text="Mây rải rác"
+        android:textColor="#CCffffff"
+        android:textSize="13sp" />
+
+    <!-- Min / Max -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/tvForecastMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="↑ --°C"
+            android:textColor="#FFEB3B"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvForecastMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="↓ --°C"
+            android:textColor="#90CAF9"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

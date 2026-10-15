@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Context menu for long-pressing a news item -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ctx_open_browser"
+        android:title="@string/open_browser" />
+
+    <item
+        android:id="@+id/ctx_share_news"
+        android:title="@string/menu_share" />
+
+    <item
+        android:id="@+id/ctx_copy_link"
+        android:title="Sao chép liên kết" />
+
+</menu>
