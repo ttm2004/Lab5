@@ -23,6 +23,7 @@ navigation = "2.8.5"
 swiperefresh = "1.1.0"
 # Google Play Services
 gmsAuth = "21.3.0"
+gmsLocation = "21.3.0"
 # Lottie animation
 lottie = "6.6.2"
 # Shimmer
@@ -58,6 +59,8 @@ navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version
 swiperefresh = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swiperefresh" }
 # Google Play Services Auth
 gms-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "gmsAuth" }
+# Google Play Services Location
+gms-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "gmsLocation" }
 # Lottie
 lottie = { group = "com.airbnb.android", name = "lottie", version.ref = "lottie" }
 # Shimmer

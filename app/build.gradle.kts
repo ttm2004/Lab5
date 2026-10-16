@@ -75,6 +75,9 @@ dependencies {
     // Google Play Services Auth
     implementation(libs.gms.auth)
 
+    // Google Play Services Location
+    implementation(libs.gms.location)
+
     // Lottie animations
     implementation(libs.lottie)
 

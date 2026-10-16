@@ -73,8 +73,24 @@ public class WeatherRepository {
 
     public MutableLiveData<ForecastResponse> fetchForecast(String city) {
         MutableLiveData<ForecastResponse> liveData = new MutableLiveData<>();
-        // cnt=40 → full 5-day/3-hour list
         api.getForecastByCity(city, BuildConfig.WEATHER_API_KEY, LANG, 40)
+                .enqueue(new Callback<ForecastResponse>() {
+                    @Override
+                    public void onResponse(Call<ForecastResponse> call,
+                                           Response<ForecastResponse> response) {
+                        liveData.postValue(response.isSuccessful() ? response.body() : null);
+                    }
+                    @Override
+                    public void onFailure(Call<ForecastResponse> call, Throwable t) {
+                        liveData.postValue(null);
+                    }
+                });
+        return liveData;
+    }
+
+    public MutableLiveData<ForecastResponse> fetchForecastByCoords(double lat, double lon) {
+        MutableLiveData<ForecastResponse> liveData = new MutableLiveData<>();
+        api.getForecastByCoords(lat, lon, BuildConfig.WEATHER_API_KEY, LANG, 40)
                 .enqueue(new Callback<ForecastResponse>() {
                     @Override
                     public void onResponse(Call<ForecastResponse> call,

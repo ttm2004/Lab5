@@ -13,9 +13,12 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+
+import com.trantrongmanh.lab5.util.LocationHelper;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
@@ -312,6 +315,33 @@ public class MainActivity extends AppCompatActivity {
             drawerLayout.closeDrawers();
         } else {
             super.onBackPressed();
+        }
+    }
+
+    // ── Xử lý kết quả xin quyền vị trí ───────────────────────────────────────
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        if (requestCode == LocationHelper.REQUEST_LOCATION_PERMISSION) {
+            boolean granted = grantResults.length > 0
+                    && grantResults[0] == android.content.pm.PackageManager.PERMISSION_GRANTED;
+
+            if (granted) {
+                // Thông báo cho WeatherFragment biết quyền đã được cấp
+                if (weatherFragment != null) {
+                    weatherFragment.onLocationPermissionGranted();
+                }
+            } else {
+                new AlertDialog.Builder(this)
+                        .setTitle("Quyền vị trí bị từ chối")
+                        .setMessage("Ứng dụng cần quyền vị trí để hiển thị thời tiết tại nơi bạn đang ở. Bạn vẫn có thể tìm kiếm thành phố thủ công.")
+                        .setPositiveButton("OK", null)
+                        .show();
+            }
         }
     }
 }
